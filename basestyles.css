@@ -6,6 +6,22 @@ body {
   display: grid;
   gap: 8px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+legend {
+  font-weight: bold;
+  padding: 0 0.5em;
+
+}
 header {
   border-bottom: 1px solid #ccc;
   display: flex;
@@ -37,19 +53,34 @@ a {
     text-decoration: underline;
   }
 }
+h2{
+  border-bottom: 1px solid #ccc;
+}
 button {
+  background-color: #000;
+  color: #fff;
   border: none;
   padding: 1em;
+  border-radius: 12px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #333;
 }
 main {
   border-right: 1px solid #ccc;
+  padding-inline: 0.5em;
 }
 #siteIcon {
   width: 80px;
 }
+section {
+  padding: 0.5em;
+  margin-block: 1em;
+}
 #breadSection {
-  padding: 1em;
+  padding: 0;
 }
 #shoppingCart {
   display: flex;
@@ -97,7 +128,7 @@ footer {
     grid-template:
       "header" auto
       "main" auto
-      "footer" auto / auto !important;
+      "footer" auto / auto;
   }
   header {
     flex-direction: column;
@@ -105,7 +136,7 @@ footer {
   nav {
     margin-block: 1em;
     ul {
-      gap: 0.5em !important;
+      gap: 0.5em;
       li {
         text-align: right;
       }

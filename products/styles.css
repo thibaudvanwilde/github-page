@@ -4,14 +4,12 @@ body {
     "main main main sidebar" auto
     "footer footer footer footer" auto / 1fr 1fr 1fr auto;
 }
-button {
-  background-color: #ccc;
-}
 header {
   grid-area: header;
 }
 main {
   grid-area: main;
+  margin: 0;
 }
 aside {
   grid-area: sidebar;

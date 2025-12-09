@@ -1,18 +1,94 @@
 body {
-  grid-template: "header header" auto
-  "main sidebar" auto
-  "footer footer" auto / 1fr 1fr;
+  grid-template:
+    "header header" auto
+    "shoppingcart checkout" auto
+    "footer footer" auto / 1fr 1fr;
 }
+
 header {
   grid-area: header;
 }
-main {
-  grid-area: main;
-  padding: 1em;
+#shoppingCart {
+  grid-area: shoppingcart;
+  border-right: 1px solid #ccc;
 }
-aside {
-  grid-area: sidebar;
+
+#checkout {
+  grid-area: checkout;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+fieldset {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  input {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+}
+#checkoutButton {
+  margin-block: 1em;
+  width: 100%;
+}
+
 footer {
   grid-area: footer;
+}
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  fieldset {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #shoppingCart,
+  #checkout {
+    padding: 1em;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 720px) {
+  body {
+    grid-template:
+      "header" auto
+      "shoppingcart" auto
+      "checkout" auto
+      "footer" auto / 1fr;
+  }
+  fieldset {
+    grid-template-columns: 1fr;
+    gap: 0.75em;
+  }
+
+  fieldset input {
+    padding: 0.75em;
+    font-size: 1em;
+  }
+
+  #shoppingCart,
+  #checkout {
+    padding: 0.75em;
+  }
+
+  #shoppingCart h2,
+  #checkout h2 {
+    font-size: 1.25em;
+    margin: 0.5em 0;
+  }
+  #shoppingCart {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
 }
