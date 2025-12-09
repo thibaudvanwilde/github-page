@@ -1,0 +1,18 @@
+body {
+  grid-template:
+    "header header header header" auto
+    "main main main sidebar" auto
+    "footer footer footer footer" auto / 1fr 1fr 1fr 0.8fr;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: sidebar;
+}
+footer {
+  grid-area: footer;
+}
