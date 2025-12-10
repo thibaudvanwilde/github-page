@@ -1,15 +1,15 @@
 body {
   grid-template:
-    "header header header header" auto
-    "main main main sidebar" auto
-    "footer footer footer footer" auto / 1fr 1fr 1fr auto;
+    "header header" auto
+    "products sidebar" auto
+    "footer footer" auto / 1fr auto;
 }
 header {
   grid-area: header;
 }
-main {
-  grid-area: main;
-  margin: 0;
+main, aside {
+  padding: 0.5em;
+  margin: 0.5em;
 }
 aside {
   grid-area: sidebar;
@@ -17,10 +17,17 @@ aside {
 footer {
   grid-area: footer;
 }
+main {
+  grid-area: products;
+}
 #breadSection {
+  padding: 0;
   display: flex;
-  flex-wrap: wrap;
   gap: 8px;
+  flex-wrap: wrap;
+}
+#shoppingCart {
+  grid-area: sidebar;
 }
 article {
   width: 120px;
@@ -35,15 +42,20 @@ figure {
     font-size: 14px;
   }
   > img {
-  width: 100px;
-  border-radius: 1em;
-}}
+    width: 100px;
+    border-radius: 1em;
+  }
+}
+section {
+  padding: 0.5em;
+  margin-block: 1em;
+}
 
 @media screen and (max-width: 720px) {
   body {
     grid-template:
       "header" auto
-      "main" auto
+      "products" auto
       "footer" auto / auto;
   }
   aside {

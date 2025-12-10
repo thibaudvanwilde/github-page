@@ -4,7 +4,6 @@ body {
   margin: 0;
   padding: 1em;
   display: grid;
-  gap: 8px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -70,22 +69,18 @@ button:hover {
 }
 main {
   border-right: 1px solid #ccc;
-  padding-inline: 0.5em;
+}
+:not(main) > section {
+  padding: 0.5em;
+  margin: 0.5em;
 }
 #siteIcon {
   width: 80px;
 }
-section {
-  padding: 0.5em;
-  margin-block: 1em;
-}
-#breadSection {
-  padding: 0;
-}
+
 #shoppingCart {
   display: flex;
   flex-direction: column;
-  margin-block: 1em;
   gap: 1em;
   article {
     width: 100%;

@@ -7,6 +7,9 @@ body {
 header {
   grid-area: header;
 }
+main, aside {
+  padding: 1em; 
+}
 main {
   grid-area: main;
 }
