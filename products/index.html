@@ -12,14 +12,19 @@
 
 <body>
   <header>
-    <img src="../img/logo.png" alt="" class="logo-small">
     <nav>
+      <img src="../img/logo.png" alt="" width="82px">
       <ul>
         <li><a href="../homepage">Homepage</a></li>
         <li><a href="../products">Producten</a></li>
         <li><a href="../shoppingcart">Winkelmandje</a></li>
         <li><a href="../profile">Profiel</a></li>
       </ul>
+      <select name="Language Select" id="languageSelect">
+        <option value="NL">NL</option>
+        <option value="FR">FR</option>
+        <option value="EN">EN</option>
+      </select>
     </nav>
   </header>
   <main>
@@ -27,73 +32,73 @@
     <section id="breadSection">
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Wit brood</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Volkorenbrood</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Speltbrood</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Meergranenbrood</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Roggebrood</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Zuurdesembrood</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Tijgerbrood</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Bruinbrood</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Licht-meergranen</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Tarwebrood</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Casinobrood wit</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
       <article>
         <figure><img src="../img/bread.jpg">
-          <figcaption>Lorem Ipsum</figcaption>
+          <figcaption>Casinobrood bruin</figcaption>
           <button>Add to cart</button>
         </figure>
       </article>
@@ -102,23 +107,22 @@
   <aside>
     <h2>Mijn Winkelmandje</h2>
     <button>Leeg winkelmandje</button>
-    <section id="shoppingCart">
-      <article>
-        <button>Verwijderen</button>
-        <img src="../img/bread.jpg">
-        <h3>Bruin Brood 1</h3>
-      </article>
-      <article>
-        <button>Verwijderen</button>
-        <img src="../img/bread.jpg">
-        <h3>Bruin Brood 5</h3>
-      </article>
-      <article>
-        <button>Verwijderen</button>
-        <img src="../img/bread.jpg">
-        <h3>Bruin Brood 9</h3>
-      </article>
-    </section>
+    <article>
+      <button>Verwijderen</button>
+      <img src="../img/bread.jpg">
+      <h3>Wit brood</h3>
+    </article>
+    <article>
+      <button>Verwijderen</button>
+      <img src="../img/bread.jpg">
+      <h3>Roggebrood</h3>
+    </article>
+    <article>
+      <button>Verwijderen</button>
+      <img src="../img/bread.jpg">
+      <h3>Licht-meergranen</h3>
+    </article>
+    <button onclick="window.location = '../shoppingcart'">Afrekenen</button>
 
   </aside>
   <footer>

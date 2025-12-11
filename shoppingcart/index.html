@@ -12,32 +12,38 @@
 
 <body>
   <header>
-    <img src="../img/logo.png" alt="" width="82px">
     <nav>
+      <img src="../img/logo.png" alt="" width="82px">
       <ul>
         <li><a href="../homepage">Homepage</a></li>
         <li><a href="../products">Producten</a></li>
         <li><a href="../shoppingcart">Winkelmandje</a></li>
         <li><a href="../profile">Profiel</a></li>
       </ul>
+      <select name="Language Select" id="languageSelect">
+        <option value="NL">NL</option>
+        <option value="FR">FR</option>
+        <option value="EN">EN</option>
+      </select>
     </nav>
   </header>
+  </header>
   <section id="shoppingCart">
-    <h2>Mijn winkelmandje</h2>
+    <h2>Mijn Winkelmandje</h2>
     <article>
-      <button>Verwijder</button>
+      <button>Verwijderen</button>
       <img src="../img/bread.jpg">
-      <h3>Bruin Brood 1</h3>
+      <h3>Wit brood</h3>
     </article>
     <article>
-      <button>Verwijder</button>
+      <button>Verwijderen</button>
       <img src="../img/bread.jpg">
-      <h3>Bruin Brood 5</h3>
+      <h3>Roggebrood</h3>
     </article>
     <article>
-      <button>Verwijder</button>
+      <button>Verwijderen</button>
       <img src="../img/bread.jpg">
-      <h3>Bruin Brood 9</h3>
+      <h3>Licht-meergranen</h3>
     </article>
   </section>
   <section id="checkout">
@@ -59,18 +65,8 @@
         <label for="houseNumber">Huisnummer:</label>
         <input type="number" id="houseNumber" autocomplete="address-line2">
       </fieldset>
-      <fieldset>
-        <legend>Betaalgegevens</legend>
-        <label for="cardNumber">Kaartnummer:</label>
-        <input type="number" id="cardNumber" autocomplete="cc-number">
-        <label for="expiryDate">Vervaldatum:</label>
-        <input type="month" id="expiryDate" autocomplete="cc-exp">
-        <label for="CVC">CVC:</label>
-        <input type="number" id="CVC" autocomplete="cc-csc">
-        <label for="cardHolder">Naam kaarthouder:</label>
-        <input type="text" id="cardHolder" autocomplete="cc-name">
-      </fieldset>
-      <button type="submit" onclick="event.preventDefault()" id="checkoutButton">Afrekenen</button>
+      <h3>Levervenster</h3>
+      <button type="submit" onclick="event.preventDefault()" id="confirmButton">Bevestigen</button>
     </form>
   </section>
   <footer>

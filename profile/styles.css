@@ -1,8 +1,8 @@
 body {
   grid-template:
-    "header header header header" auto
-    "main main main sidebar" auto
-    "footer footer footer footer" auto / 1fr 1fr 1fr 0.8fr;
+    "header header" auto
+    "main sidebar" auto
+    "footer footer" auto / 1fr auto;
 }
 header {
   grid-area: header;
@@ -18,4 +18,17 @@ aside {
 }
 footer {
   grid-area: footer;
+}
+@media screen and (max-width: 1024px) {
+  fieldset {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  fieldset {
+    grid-template-columns: 1fr;
+  }
 }

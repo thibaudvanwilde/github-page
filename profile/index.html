@@ -5,29 +5,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profiel - Goober Bakeries</title>
-  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="../basestyles.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <header>
-    <img src="../img/logo.png" alt="" width="82px">
     <nav>
+      <img src="../img/logo.png" alt="" width="82px">
       <ul>
         <li><a href="../homepage">Homepage</a></li>
         <li><a href="../products">Producten</a></li>
         <li><a href="../shoppingcart">Winkelmandje</a></li>
         <li><a href="../profile">Profiel</a></li>
       </ul>
+      <select name="Language Select" id="languageSelect">
+        <option value="NL">NL</option>
+        <option value="FR">FR</option>
+        <option value="EN">EN</option>
+      </select>
     </nav>
   </header>
   <main>
-    <h2>Mijn Profiel</h2>
+    <h2>Welkom Jan Janssen! U bent ingelogd als jan@janssen.be.</h2>
+    <form>
+      <fieldset>
+        <legend>Bestellingen en Facturen</legend>
+        <label for="city">Stad:</label>
+        <input type="text" id="city" value="Merelbeke">
+        <label for="zipCode">Postcode:</label>
+        <input type="number" id="zipCode" value="9820">
+        <label for="street">Straat:</label>
+        <input type="text" id="street" value="Schellebellepontweg">
+        <label for="houseNumber">Huisnummer:</label>
+        <input type="number" id="houseNumber" value="4">
+      </fieldset>
+      <fieldset>
+        <legend>Gegevens en voorkeuren</legend>
+        <label for="firstName">Voornaam:</label>
+        <input type="text" id="firstName" value="Jan">
+        <label for="lastName">Achternaam:</label>
+        <input type="text" id="lastName" value="Janssen">
+        <label for="phoneNumber">Telefoonnummer:</label>
+        <input type="text" id="phoneNumber" value="+32476524257">
+        <label for="email">E-mailadres:</label>
+        <input type="text" id="email" value="jan@janssen.be">
+        <label for="password">Wachtwoord:
+          <span style="letter-spacing: 1px; margin-inline: 0.5em;">••••••••</span>
+        </label>
+        <button onclick="event.preventDefault()">Wachtwoord wijzigen</button>
+      </fieldset>
+      <button type="submit" onclick="event.preventDefault()">Instellingen Opslaan</button>
+    </form>
   </main>
   <aside>
-    <h2>Mijn winkelmandje</h2>
-    <p>Je winkelmandje is momenteel leeg.</p>
+    <h2>Mijn Winkelmandje</h2>
+    <button>Leeg winkelmandje</button>
+    <article>
+      <button>Verwijderen</button>
+      <img src="../img/bread.jpg">
+      <h3>Wit brood</h3>
+    </article>
+    <article>
+      <button>Verwijderen</button>
+      <img src="../img/bread.jpg">
+      <h3>Roggebrood</h3>
+    </article>
+    <article>
+      <button>Verwijderen</button>
+      <img src="../img/bread.jpg">
+      <h3>Licht-meergranen</h3>
+    </article>
   </aside>
   <footer>
     <section id="copyright">

@@ -6,48 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Goober Bakeries</title>
   <link rel="stylesheet" href="../basestyles.css">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <header>
-    <img src="../img/logo.png" class="logo-small">
     <nav>
+      <img src="../img/logo.png" alt="" width="82px">
       <ul>
         <li><a href="../homepage">Homepage</a></li>
         <li><a href="../products">Producten</a></li>
         <li><a href="../shoppingcart">Winkelmandje</a></li>
-        <li><a href="../profile">Profiel</a></li>
+        <li><a href="../profile">Login</a></li>
       </ul>
+      <select name="Language Select" id="languageSelect">
+        <option value="NL">NL</option>
+        <option value="FR">FR</option>
+        <option value="EN">EN</option>
+      </select>
     </nav>
   </header>
   <main>
     <article>
       <section>
-        <h2 id="verhuisdTekst">We zijn verhuisd!</h2>
-        <p>Ons nieuw adres is A.Latourstraat 4, 9050 Gent</p>
-      </section>
-      <section>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6964.121439416457!2d3.7413100129619417!3d51.04105337159293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c376abfee06357%3A0xa0a155d7b4a88054!2sA.Latourstraat%204%2C%209050%20Gent!5e1!3m2!1snl!2sbe!4v1765275591930!5m2!1snl!2sbe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1101.6494737480907!2d3.5641651621045654!3d50.811879360147174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c310609ea550ed%3A0x4d4520cfb7ac3e32!2sHevelweg%2011%2C%209700%20Oudenaarde!5e1!3m2!1snl!2sbe!4v1765465795789!5m2!1snl!2sbe"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
+      <section>
+        <h2 id="verhuisdTekst">We zijn verhuisd!</h2>
+        <p>Ons nieuw adres is Hevelweg 11, 9700 Melden</p>
+      </section>
     </article>
-    <article>
-      <section><img src="../img/bread.jpg" alt=""></section>
+    <article id="awards">
       <section>
         <h2>"Een bakkerij die een voorbeeld is voor anderen"</h2>
         <p>De Bakery Managment Awards gaat opzoek naar een bakerij die een voorbeeld is voor andere. Hier is waarom je
           op ons zou moeten stemmen.</p>
         <button>Call to action</button>
       </section>
+      <section><img src="../img/bread.jpg" alt=""></section>
     </article>
     <article>
-      <section>
-        <h2>A quick peek</h2>
-        <p>Call out a feature, benefit, or value of your site that can stand on its own.</p>
-      </section>
       <section id="quickPeek">
         <article>
           <img src="../img/bread.jpg" alt="">
@@ -59,6 +60,56 @@
           <h3>A little glimpse</h3>
           <p>Call out a feature, benefit, or value of your site that can stand on its own.</p>
         </article>
+      </section>
+      <section>
+        <h2>A quick peek</h2>
+        <p>Call out a feature, benefit, or value of your site that can stand on its own.</p>
+      </section>
+    </article>
+    <article>
+      <section>
+        <h2>Openingsuren</h2>
+        <p>Onze bakkerij is elke dag geopend om u te bedienen met verse en heerlijke producten.</p>
+      </section>
+      <section id="openingHours">
+        <table>
+          <tbody>
+            <tr>
+              <th scope="row">Maandag</th>
+              <td>07u30 - 13u00</td>
+              <td>13u30 - 19u30</td>
+            </tr>
+            <tr>
+              <th scope="row">Dinsdag</th>
+              <td>07u30 - 13u00</td>
+              <td>13u30 - 19u30</td>
+            </tr>
+            <tr>
+              <th scope="row">Woensdag</th>
+              <td>07u30 - 13u00</td>
+              <td>13u30 - 19u30</td>
+            </tr>
+            <tr>
+              <th scope="row">Donderdag</th>
+              <td>07u30 - 13u00</td>
+              <td>13u30 - 19u30</td>
+            </tr>
+            <tr>
+              <th scope="row">Vrijdag</th>
+              <td>07u30 - 13u00</td>
+              <td>13u30 - 19u30</td>
+            </tr>
+            <tr>
+              <th scope="row">Zaterdag</th>
+              <td>07u30 - 13u00</td>
+              <td>13u30 - 19u30</td>
+            </tr>
+            <tr>
+              <th scope="row">Zondag & feestdagen</th>
+              <td colspan="2">07u30 - 13u00</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </article>
   </main>
